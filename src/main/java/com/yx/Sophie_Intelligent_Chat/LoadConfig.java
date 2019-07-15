@@ -27,10 +27,7 @@ public class LoadConfig {
         try {
             InputStream is=new FileInputStream(new File(fileName));
             properties.load(is);
-            System.out.println(text);
-            System.out.println(properties.getProperty("打开计算器"));
             values=properties.getProperty(text);
-            System.out.println(properties.getProperty(text));
          } catch (Exception e) {
             e.printStackTrace();
         }
